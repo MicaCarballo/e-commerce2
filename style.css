@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+:root{
+    --after-content:"2";
+}
+
+
+.row{
+    display: flex;
+}
+.row .leftside{
+    width: 50%;
+    height: 100vh;
+   
+}
+.row .rightside{
+    width: 50%;
+    height: 100vh;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+.row .rightside h1{
+    font-size: 3.5rem;
+    font-family: 'Titan One', cursive;
+    padding-bottom: 40px;
+   
+}
+.row .rightside p{
+    font-size: 2rem;
+    font-family: 'Titan One', cursive;
+}
+.row .rightside button{
+    font-size: 2.5rem;
+    font-family: 'Titan One', cursive;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    justify-content: center;
+}
+iframe{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+  background-image: url("https://thumbs.dreamstime.com/b/textura-del-fondo-acero-metal-o-de-aluminio-en-la-alta-resoluci%C3%B3n-140742021.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+
+}
+ul  .menu-show{
+    display: flex;
+}
+.navbar a{
+text-decoration: none;
+color: black;
+padding: 1rem;
+}
+
+.navbar img{
+    height: 80px;
+}
+.navbar i{
+    font-size: 80px;
+}
+#hamburguer{
+    cursor: pointer;
+    display: none;
+}
+a .menu-show{
+    display: flex;
+}
+.cart-box{
+    position: absolute;
+    left: 72%;
+    top: 25%;
+    width: 26% !important;
+    
+}
+.cart-wrapper{
+    overflow-y: auto;
+    max-height: 350px;
+}
+.cart-item{
+display: grid;
+grid-template-columns: 3fr 6fr 1fr;
+padding: 5% 2%;
+}
+.cart-item img{
+    width: 100%;
+}
+.cart-item .details{
+    padding-left: 1rem;
+}
+.cart-item h3{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.cart-item .price{
+    display: block;
+    text-align: right;
+}
+.subtotal{
+    text-align: right;
+}
+.checkout, .view-cart{
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+}
+.quantity{
+    display: block;
+    margin-top: 15%;
+}
+#addcart{
+    font-size: 40px;
+    cursor: pointer;
+}
+.cancel i{
+    font-size: 2rem;
+}
+.whole-cart-window{
+    border: solid black 2.5px;
+    border-radius: 10px;
+    position: fixed;
+    top:20vh;
+    background-color: white;
+}
+.hide{
+    display: none;
+}
+.non-empty::after{
+content: var(--after-content);
+font-size: 20px;
+width: 20px;
+display: inline-block;
+text-align: center;
+position: relative;
+background-color: green;
+border-radius: 50%;
+top: -40px;
+right: 20%;
+}
+.products{
+    
+    width: 100vw;
+    height: 100vh;
+}
+.products .options{
+    padding: 3rem;
+    background-image: url('images/main_menu/categories/mathmos_original_1960_lava_lamps.jpg');
+    background-size:cover;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: auto;
+}
+.products .circle1{
+    cursor: pointer;
+    font-family: 'Titan One', cursive;
+    font-size: 2rem;
+    color: black;
+    
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url(./alllavas.jpg);
+}
+
+.products .circle2{
+    cursor: pointer;
+    font-family: 'Titan One', cursive;
+    font-size: 2rem;
+    color: black;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    height: 25vh;
+    border-radius: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./original.jpeg);
+}
+
+
+.products .circle3{
+    cursor: pointer;
+    font-family: 'Titan One', cursive;
+    font-size: 2rem;
+    color: black;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    height: 25vh;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./rocket.png);
+}
+.products .circle4{
+    font-family: 'Titan One', cursive;
+    font-size: 2rem;
+    color: black;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    height: 25vh;
+    cursor: pointer;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./giant.jpg);
+}
+.box{
+     
+    background-color:#F2F2F2 ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap ;
+    width: 100%;
+    height: 100%;
+    
+    overflow: auto;
+   
+   
+    
+    
+    
+    
+ }
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+   width: 19rem;
+   max-height: fit-content;
+   padding: 1rem;
+   margin: 0.5rem;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   
+   
+  
+   
+   
+    
+    
+
+}
+
+
+.card-image{
+     
+    height: 200px;
+    margin-bottom: 1rem;
+    background-size:contain;
+    border-radius: 12px 12px 0px 0px;
+    
+   
+}
+.card h2{
+    font-family: 'Titan One', cursive;
+    font-size: 1rem;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+.card p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.card .links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card a{
+    
+    display: block;
+    width:2rem ;
+    margin:2rem;
+    
+    
+}
+.card a i{
+    color: black;
+   cursor: pointer;
+    font-size: 2.5rem;
+}
+
+
+.card-1{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./astro_original_lava_lamp.jpg");
+    
+}
+
+.lampimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+
+}
+.card-3{
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./webexamp.gif);
+
+
+}
+.card-1{
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./webexamp.gif);
+    
+}
+
+.card-2{
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./webexamp.gif);
+
+}
+.card-3{
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./webexamp.gif);
+
+
+}
+
+@media(max-width:720px){
+    ul{
+        display:none ;
+    }
+        
+    #hamburguer{
+        display:flex;
+    }
+    ul .menu_show{
+        display: flex;
+    }
+    .row{
+       display: grid;
+        
+}
+
+    
+.row .leftside{
+    width: 100%;
+    height: 50vh;
+}
+.row .rightside{
+    width: 100%;
+    height: 50vh;
+}
+iframe{
+    height: 50vh;
+}
+.footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+}
+.footer{
+    background-image: url("https://thumbs.dreamstime.com/b/textura-del-fondo-acero-metal-o-de-aluminio-en-la-alta-resoluci%C3%B3n-140742021.jpg");
+    display: flex;
+    justify-content: space-around;
+}
